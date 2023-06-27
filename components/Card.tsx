@@ -6,17 +6,15 @@ export const Card = () => {
   return (
     <article className='card'>
         <div className='card-body'>
-        <h1>Stay updated!</h1>
-        <p style={{
-          textAlign: 'start',
-          fontSize: '12px'
-        }}>Join 60,000+ product managers receiving monthly updates on:</p>
+        <div>
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
         
         <List/>
         <FormEmail/>
       </div>
       <ImageSignup/>
-  
     </article>
   )
 }

@@ -6,8 +6,8 @@ export const ImageSignup = () => {
   return (
     <div className='card-image'>
         <picture>
-          <source src={desktopIMG.src} media="min(641px)" type="" />
-          <source src={mobileIMG.src} media="max(640px)" type="" />
+          <source srcSet={desktopIMG.src} media="(min-width: 641px)" type="image/svg+xml" />
+          <source srcSet={mobileIMG.src} media="(max-width: 640px)" type="image/svg+xml" />
           <Image src={desktopIMG} alt="" />
         </picture>
       </div>
